@@ -15,7 +15,7 @@ The study will focus on **Lagos State, Nigeria**, which is divided into 20 Local
 The **Lagos State Health Facility Assessment Dataset** contains information on healthcare facilities across the 20 LGAs of Lagos State, including facility characteristics and location-related information.
 
 **Source:** Health Systems Consult Limited (HSCL), *Lagos State Health Facility Assessment Datasets*
-[Dataset source – Figshare](https://figshare.com/articles/dataset/Lagos_State_Health_Facility_Assessment_Datasets_HSCL/22118315?utm_source=chatgpt.com)
+[Dataset source – Figshare](https://figshare.com/articles/dataset/Lagos_State_Health_Facility_Assessment_Datasets_HSCL/22118315)
 
 The dataset contains information from an assessment of healthcare facilities in Lagos State and includes data on facility ownership, level of care, human resources, infrastructure, equipment and available services.
 
@@ -24,15 +24,17 @@ The dataset contains information from an assessment of healthcare facilities in 
 The **WorldPop Nigeria Population Counts** dataset will be used to estimate the spatial distribution of population across Lagos State. The dataset provides gridded population estimates that can be used to calculate population density.
 
 **Source:** WorldPop, University of Southampton
-[WorldPop Nigeria Population Counts](https://hub.worldpop.org/geodata/summary?id=74733&utm_source=chatgpt.com)
+[WorldPop Nigeria Population Counts](https://hub.worldpop.org/geodata/summary?id=74733)
 
 The 2023 dataset provides population estimates at approximately 100 m spatial resolution, allowing population distribution to be examined at a relatively detailed spatial scale.
 
 ### 3. Lagos State Administrative Boundaries
 
-Administrative boundary data for Lagos State and its Local Government Areas will be used to define the study area and aggregate the healthcare and population data by LGA.
+Administrative boundary polygons for Lagos State and its Local Government Areas (LGAs) will be used to define the study area and support the aggregation and spatial analysis of healthcare facility and population data at the LGA level.
 
-**Source:** Lagos State Government / relevant open geospatial administrative boundary dataset.
+**Source:** United Nations Second Administrative Level Boundaries (SALB), Nigeria
+**Source Link:** [UN SALB Nigeria Dataset](https://salb.un.org/en/data/nga?utm_source=chatgpt.com)
+
 
 ## Methodology
 
