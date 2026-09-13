@@ -17,7 +17,7 @@ The datasets used in this project were obtained from publicly available geospati
 | Dataset                             | Source                                                                                                                      | Format    | Features/Records | Geometry | Main Purpose                                                                                            |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------: | -------- | ------------------------------------------------------------------------------------------------------- |
 | Lagos LGA Boundaries                | [Humanitarian Data Exchange (HDX)](https://data.humdata.org/dataset/cod-ab-nga)                                             | Shapefile |               20 | Polygon  | Defines the 20 Local Government Areas (LGAs) in Lagos State                                             |
-| Lagos State Administrative Boundary | [Humanitarian Data Exchange (HDX)](https://data.humdata.org/)                                                               | Shapefile |                1 | Polygon  | Defines the overall administrative boundary of Lagos State                                              |
+| Lagos State Administrative Boundary | [Humanitarian Data Exchange (HDX)](https://data.humdata.org/dataset/cod-ab-nga))                                                               | Shapefile |                1 | Polygon  | Defines the overall administrative boundary of Lagos State                                              |
 | Health Facilities                   | [Lagos State Health Facility Assessment Datasets – HSCL](https://doi.org/10.6084/m9.figshare.22118315)                      | CSV       |            2,320 | Point    | Contains the locations and attributes of health facilities in Lagos State                               |
 | LGA Population & Demographic Data   | [National Bureau of Statistics (NBS), accessed via Kaggle](https://www.kaggle.com/datasets/favourokoli/lgas-in-lagos-state) | CSV       |               20 | None     | Provides LGA-level population, area, population density, median age, health facilities, and growth rate |
 
@@ -30,7 +30,7 @@ The datasets used in this project were obtained from publicly available geospati
 
 The Lagos LGA administrative boundary data were obtained from the **Humanitarian Data Exchange (HDX)**. HDX provides administrative boundary datasets as part of its geospatial and humanitarian datasets. Administrative boundaries contain the names and identifiers of sub-national administrative units and are commonly used as reference layers for spatial analysis.
 
-[Humanitarian Data Exchange – Geospatial Data and GIS](https://centre.humdata.org/learning-path/an-introduction-to-geospatial-data/geospatial-data-geographic-information-systems/)
+[Humanitarian Data Exchange]([https://centre.humdata.org/learning-path/an-introduction-to-geospatial-data/geospatial-data-geographic-information-systems/](https://data.humdata.org/dataset/cod-ab-nga))
 
 ### Dataset characteristics
 
