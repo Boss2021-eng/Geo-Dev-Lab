@@ -229,19 +229,14 @@ Where population density was calculated independently, the following relationshi
 
 Several limitations should be considered when interpreting the datasets:
 
-1. **Different data sources:** The administrative boundaries, health facilities and demographic data originate from different sources. Differences in definitions, dates and update cycles may therefore exist.
+1. **Different data sources:** The administrative boundary, health facility, and demographic datasets were obtained from different sources. Consequently, differences exist in their definitions, data collection methods, and update cycles.
 
-2. **Temporal differences:** The datasets may not have been collected or updated at exactly the same time. The population dataset contains 2024 estimates, whereas healthcare facility records may have different update dates.
+2. **Temporal differences:** The datasets represent different reference periods. The population dataset contains **2024 population estimates**, while the health facility dataset contains records from **2025**. Therefore, the population and health facility data do not represent exactly the same point in time.
 
-3. **Missing attribute values:** Some healthcare facility attributes may contain missing values. Missing information does not necessarily mean that the facility does not have that characteristic; it may indicate that the information was not available in the source dataset.
+3. **Missing attribute values:** Some health facility records contain missing values for selected attributes. These missing values indicate that the corresponding information was not available in the source dataset and were retained as missing during the analysis.
 
-4. **Name-based joining:** The population data were joined to the LGA boundary dataset using LGA names. Name inconsistencies can result in unmatched records and should be checked after the join.
+4. **Population estimates:** The population values represent **2024 estimates** rather than census counts. Therefore, they provide estimated population levels for each LGA and should not be interpreted as exact population counts.
 
-5. **Population estimates:** Population values are estimates and should not be interpreted as exact population counts.
-
-6. **Healthcare facility completeness:** The health-facility dataset should not automatically be interpreted as a complete inventory of every healthcare facility in Lagos State. Coverage depends on the source data and its collection/update process.
-
-7. **Area measurements:** The `area_sqkm` field in the administrative boundary data and the `Area(Km 2)` field in the population dataset may have been calculated using different methods or source boundaries. For analyses requiring precise spatial measurements, area should be recalculated from the final boundary geometry using an appropriate projected coordinate reference system.
 
 ---
 
