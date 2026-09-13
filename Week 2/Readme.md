@@ -131,13 +131,6 @@ The original dataset is available through Figshare:
 | `alt_name`   | Alternative facility name            |
 | `geometry`   | Spatial geometry                     |
 
-### Missing values and data-quality considerations
-
-The health-facility dataset contains several descriptive fields that may not be populated for every facility. Therefore, missing values should be checked before performing analysis based on facility characteristics such as ownership, type, category or functional status.
-
-The `latitude` and `longitude` fields provide the main spatial reference for the facilities. These coordinates should be checked for invalid or missing values before converting the dataset into a point layer in QGIS.
-
-The `lganame` field was used to associate each healthcare facility with an LGA. Name-based joins can be affected by differences in spelling, abbreviations or formatting, so the resulting join should be checked for unmatched records.
 
 ---
 
@@ -216,11 +209,9 @@ Several limitations should be considered when interpreting the datasets:
 
 1. **Different data sources:** The administrative boundary, health facility, and demographic datasets were obtained from different sources. Consequently, differences exist in their definitions, data collection methods, and update cycles.
 
-2. **Temporal differences:** The datasets represent different reference periods. The population dataset contains **2024 population estimates**, while the health facility dataset contains records from **2025**. Therefore, the population and health facility data do not represent exactly the same point in time.
+2. **Temporal differences:** The datasets represent different reference periods. The population dataset contains **2024 population estimates**, while the health facility dataset contains records from **2023**. Therefore, the population and health facility data do not represent exactly the same point in time.
 
-3. **Missing attribute values:** Some health facility records contain missing values for selected attributes. These missing values indicate that the corresponding information was not available in the source dataset and were retained as missing during the analysis.
-
-4. **Population estimates:** The population values represent **2024 estimates** rather than census counts. Therefore, they provide estimated population levels for each LGA and should not be interpreted as exact population counts.
+3. **Population estimates:** The population values represent **2024 estimates** rather than census counts. Therefore, they provide estimated population levels for each LGA and should not be interpreted as exact population counts.
 
 
 ---
