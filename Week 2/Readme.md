@@ -96,21 +96,6 @@ This layer was used to represent the overall study-area boundary.
 
 # 5. Health Facilities Dataset
 
-### Source
-
-## Dataset Sources
-
-The datasets used in this project were obtained from publicly available geospatial, health, and demographic data sources. The datasets were processed and integrated to support the analysis of healthcare facility distribution and population density across Lagos State.
-
-| Dataset                             | Source                                                                                                                      | Format    | Features/Records | Geometry | Main Purpose                                                                                            |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------: | -------- | ------------------------------------------------------------------------------------------------------- |
-| Lagos LGA Boundaries                | [Humanitarian Data Exchange (HDX)](https://data.humdata.org/dataset/cod-ab-nga)                                             | Shapefile |               20 | Polygon  | Defines the 20 Local Government Areas (LGAs) in Lagos State                                             |
-| Lagos State Administrative Boundary | [Humanitarian Data Exchange (HDX)](https://data.humdata.org/)                                                               | Shapefile |                1 | Polygon  | Defines the overall administrative boundary of Lagos State                                              |
-| Health Facilities                   | [Lagos State Health Facility Assessment Datasets – HSCL](https://doi.org/10.6084/m9.figshare.22118315)                      | CSV       |            2,320 | Point    | Contains the locations and attributes of health facilities in Lagos State                               |
-| LGA Population & Demographic Data   | [National Bureau of Statistics (NBS), accessed via Kaggle](https://www.kaggle.com/datasets/favourokoli/lgas-in-lagos-state) | CSV       |               20 | None     | Provides LGA-level population, area, population density, median age, health facilities, and growth rate |
-
-### Health Facility Dataset
-
 The health facility data used in this project are from the **Lagos State Health Facility Assessment Datasets – HSCL**. The dataset contains **2,320 health facility records** covering Lagos State. Each record includes geographic coordinates and facility-related attributes such as LGA, ward, facility type, ownership, accessibility, and functional status.
 
 The original dataset is available through Figshare:
