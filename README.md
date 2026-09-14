@@ -1,22 +1,35 @@
 # Geo-Dev-Lab
 
-Laboratory that will done with Geo-dec
+A hands-on laboratory for building practical skills in **GIS, geospatial data, Python, web GIS, software development, AI, and agentic systems**. The programme is structured into two phases, progressing from GIS foundations to the development of intelligent geospatial applications.
 
-– Month 1, GIS foundations and the data ecosystem · weeks 1 to 4
-– Month 2, development environment and early Python · weeks 5 to 9
-– Month 3, geospatial Python and automation · weeks 10 to 14
-– Month 4, web foundations and web GIS · weeks 15 to 19
-– Month 5, backend, databases and shipping Phase One · weeks 20 to 25
-– Month 6, consolidation and Phase One review · weeks 26 to 27
-• Phase Two, software development, AI and agentic systems
-– Month 7, software development for production · weeks 28 to 31
-– Month 8, machine learning foundations · weeks 32 to 36
-– Month 9, deep learning and computer vision · weeks 37 to 41
-– Month 10, large language models · weeks 42 to 45
-– Month 11, agentic systems · weeks 46 to 49
-– Month 12, capstone integration · weeks
-Month 1
-Week 1: Choosing a question the data can answer
-week 2: What Spatial data is and getting yours
-Week 3: Coordinate systems and preparing your data
-Week 4: Spatial Relationships and analysis
+## Phase One: GIS, Geospatial Programming and Web GIS
+
+* **Month 1:** GIS foundations and the geospatial data ecosystem · **Weeks 1–4**
+* **Month 2:** Development environment and Python foundations · **Weeks 5–9**
+* **Month 3:** Geospatial Python and automation · **Weeks 10–14**
+* **Month 4:** Web foundations and Web GIS · **Weeks 15–19**
+* **Month 5:** Backend, databases and shipping Phase One · **Weeks 20–25**
+* **Month 6:** Consolidation and Phase One review · **Weeks 26–27**
+
+### Month 1
+
+**Week 1:** Choosing a question the data can answer
+Exploring real-world problems, developing spatial questions, and identifying the data needed to answer them.
+
+**Week 2:** Understanding spatial data and getting yours
+Learning what spatial data is, understanding vector and raster data, finding reliable datasets, and acquiring the data needed for analysis.
+
+**Week 3:** Coordinate systems and preparing your data
+Understanding coordinate reference systems, projections, datums, EPSG codes, and preparing spatial data for analysis.
+
+**Week 4:** Spatial relationships and analysis
+Exploring spatial relationships, spatial joins, proximity, buffers, overlays, intersections, and other fundamental spatial analysis techniques.
+
+## Phase Two: Software Development, AI and Agentic Systems
+
+* **Month 7:** Software development for production · **Weeks 28–31**
+* **Month 8:** Machine learning foundations · **Weeks 32–36**
+* **Month 9:** Deep learning and computer vision · **Weeks 37–41**
+* **Month 10:** Large language models · **Weeks 42–45**
+* **Month 11:** Agentic systems · **Weeks 46–49**
+* **Month 12:** Capstone integration · **Weeks 50–52**
