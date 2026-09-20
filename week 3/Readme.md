@@ -68,92 +68,74 @@ GeoPackage is an OGC-supported format for storing geospatial data in a SQLite-ba
 
 Although the exported file contains one combined layer, the administrative attributes remain available as separate fields.
 
-## 7.Missing-Value Assessment
+## 7. Data Quality Assessment
 
-The fields of the Lagos LGA dataset was inspected for missing values. The following fields had no null values:
+### 7.1 Completeness
 
-- `adm2_name1`
-- `adm2_name2`
-- `adm2_name3`
-- `adm1_name1`
-- `adm1_name2`
-- `adm1_name3`
-- `adm0_name1`
-- `adm0_name2`
-- `adm0_name3`
-- `valid_to`
-- `lang1`
-- `lang2`
-- `lang3`
+Completeness refers to the extent to which the required records, attributes, and geometries are present in the datasets.
 
-Each of these fields contained **20 non-null records**, indicating that no null values were detected in these columns for the 20 LGA features examined.
+The administrative boundary dataset contains 20 LGA records representing the 20 LGAs of Lagos State. The `administrative_name`, `language`, and `valid_to` fields contained no null values. Other fields contained some null values, but these were not relevant to the objectives of the analysis.
 
-However, some fields had null values throughout but they were not relevant to the purpose of this study. The fields were
+The health-facility dataset was also inspected for missing and inconsistent information. Identified issues relevant to the analysis were corrected before the spatial analysis.
 
+### 7.2 Currency
 
-## 8. Data Quality Assessment
+Currency refers to how up to date the data are in relation to the date of analysis and intended use.
 
-### 8.1 Completeness
+The datasets were obtained from different sources and represent different reference periods. The population dataset contains **2024 population estimates**, while the health-facility dataset contains **2023 records**. The available metadata do not establish the exact date when the administrative boundaries were last updated. Therefore, the datasets should not be assumed to represent the same point in time.
 
-Completeness refers to the extent to which the required records, attributes, and geometries are present in the dataset.
+Although the `valid_to` field was populated for all 20 LGA records, a non-null validity date does not necessarily confirm that the boundary data are current.
 
-The dataset contains 20 LGA records, corresponding to the 20 LGAs represented in the study area. The inspected administrative-name, language, and validity-date fields contained 20 non-null records each.
+### 7.3 Positional Accuracy
 
-Therefore, the inspected fields showed no missing values. However, some fields showed null values but there were not relevant to the subject at hand.
+Positional accuracy refers to how closely the recorded geographic positions of features correspond to their true or accepted locations.
 
-### 8.2 Currency
+The LGA boundaries were reprojected from **WGS 84 to WGS 84 / UTM Zone 31N** to support area calculations. Reprojection changes the coordinate reference system but does not improve the original positional accuracy of the boundaries.
 
-Currency refers to how up to date the data are in relation to the date of the analysis and the intended application.
+The corrected health-facility locations were compared visually against a base map. The locations showed little visible deviation from the corresponding mapped features, indicating general spatial consistency. However, this was a visual assessment and not a formal positional-accuracy assessment based on independent ground-truth coordinates.
 
-The available information does not establish the date on which the administrative boundaries and associated attributes were last updated. The `valid_to` field was populated for all 20 records, but a non-null value does not necessarily confirm that the data are current.
+### 7.4 Attribute Accuracy
 
+Attribute accuracy refers to the correctness and consistency of the descriptive and numerical information associated with spatial features.
 
-### 8.3 Positional Accuracy
+The administrative and health-facility datasets were inspected for missing and inconsistent attributes. Identified issues in the health-facility dataset that affected the analysis were corrected before further processing.
 
-Positional accuracy describes how closely the recorded geographic positions of features correspond to their true or accepted reference positions.
+However, differences in data definitions, collection methods, and source metadata may affect the comparability of attributes across the administrative, health-facility, and demographic datasets.
 
-The data were reprojected from WGS 84 to WGS 84 / UTM Zone 31N to support area measurement. However, reprojection does not improve the original positional accuracy of the boundaries.
+### 7.5 Fitness for Purpose
 
+The processed datasets are suitable for:
 
-### 8.4 Attribute Accuracy
+* Mapping the administrative structure of Lagos State
+* Aggregating health facilities by LGA
+* Joining LGA-level population statistics
+* Examining health-facility distribution in relation to population
+* Performing exploratory spatial analysis
+* Calculating approximate LGA areas
+* Producing thematic maps and spatial visualisations
 
-Attribute accuracy refers to the correctness of the descriptive and numerical information associated with each spatial feature.
+Overall, the datasets are considered suitable for **LGA-level mapping and exploratory spatial analysis** within the scope of this project. However, differences in data sources, definitions, and reference periods should be considered when interpreting the results.
 
+## 8. Limitations
 
-### 8.5 Fitness for Purpose
+The analysis had the following limitations:
 
-Fitness for purpose refers to whether the dataset is sufficiently suitable for the intended analysis or decision-making task.
+1. **Different data sources:** The administrative boundary, health-facility, and demographic datasets were obtained from different sources. Differences in definitions, data-collection methods, classification systems, and update cycles may affect their direct comparison.
 
-The processed LGA boundary dataset is potentially suitable for tasks such as:
+2. **Temporal differences:** The population dataset contains 2024 population estimates, whereas the health-facility dataset contains 2023 records. Therefore, the datasets do not represent exactly the same point in time.
 
-- Mapping the administrative structure of Lagos State;
-- Aggregating health facilities by LGA;
-- Joining LGA-level population statistics;
-- Performing exploratory spatial analysis;
-- Calculating approximate LGA areas;
-- Creating thematic maps and spatial visualisations.
+3. **Population estimates:** The population values are 2024 estimates rather than census counts and should therefore be interpreted as estimated population levels rather than exact population counts.
 
+4. **Positional accuracy:** Health-facility locations were corrected and visually compared with a base map, showing little deviation. However, no independent ground-truth dataset or formal positional-accuracy test was used.
 
+5. **Administrative boundary accuracy:** Reprojecting the LGA boundaries does not verify the accuracy of their original coordinates. Further comparison with an authoritative boundary dataset would be required for formal validation.
 
-**Initial assessment:** The dataset is potentially fit for general LGA-level mapping and exploratory spatial analysis, subject to verification of its source, currency, geometry quality, and attribute definitions.
+6. **Data comparability:** Differences in source, definitions, and reference periods mean that relationships between population and health-facility distribution should be interpreted as exploratory rather than as a definitive assessment of current healthcare accessibility or service provision.
 
-## 9. Limitations
+## 9. Conclusion
 
-The data had the following limitations:
+During Week 3, the LGA boundary dataset was reprojected from **WGS 84 to WGS 84 / UTM Zone 31N** to support area calculations. The total calculated area of the 20 LGAs was approximately **3,622.11 km²**. The processed spatial data were exported as a GeoPackage containing a single combined layer.
 
-1. **Different data sources:** The administrative boundary, health facility, and demographic datasets were obtained from different sources. Consequently, differences exist in their definitions, data collection methods, and update cycles.
+The administrative-name, language, and validity-date fields contained no null values across the 20 LGA records, although some non-relevant fields contained missing values. The health-facility dataset was inspected and corrected where necessary. The corrected health-facility locations were then compared visually against a base map and showed little spatial deviation, indicating general positional consistency.
 
-2. **Temporal differences:** The datasets represent different reference periods. The population dataset contains **2024 population estimates**, while the health facility dataset contains records from **2023**. Therefore, the population and health facility data do not represent exactly the same point in time.
-
-3. **Population estimates:** The population values represent **2024 estimates** rather than census counts. Therefore, they provide estimated population levels for each LGA and should not be interpreted as exact population counts.
-
-
-
-
-
-
-## 10. Conclusion
-
-During Week 3, the LGA boundary dataset was transformed from WGS 84 into UTM Zone 31N to support area calculations. The calculated total area was approximately 3,622.11 km². The processed data were exported as a GeoPackage containing a single combined layer.
-
-The inspected administrative, language, and validity-date fields contained no null values across the 20 LGA records. Nevertheless, completeness, currency, positional accuracy, and attribute accuracy require further validation beyond null-value checks. The dataset may be suitable for LGA-level mapping and exploratory spatial analysis, provided that its source metadata, geometry quality, and intended use are carefully considered.
+Overall, the processed datasets are suitable for LGA-level mapping, health-facility aggregation, population comparison, and exploratory spatial analysis.
