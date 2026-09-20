@@ -127,10 +127,6 @@ The analysis had the following limitations:
 
 4. **Positional accuracy:** Health-facility locations were corrected and visually compared with a base map, showing little deviation. However, no independent ground-truth dataset or formal positional-accuracy test was used.
 
-5. **Administrative boundary accuracy:** Reprojecting the LGA boundaries does not verify the accuracy of their original coordinates. Further comparison with an authoritative boundary dataset would be required for formal validation.
-
-6. **Data comparability:** Differences in source, definitions, and reference periods mean that relationships between population and health-facility distribution should be interpreted as exploratory rather than as a definitive assessment of current healthcare accessibility or service provision.
-
 ## 9. Conclusion
 
 During Week 3, the LGA boundary dataset was reprojected from **WGS 84 to WGS 84 / UTM Zone 31N** to support area calculations. The total calculated area of the 20 LGAs was approximately **3,622.11 km²**. The processed spatial data were exported as a GeoPackage containing a single combined layer.
