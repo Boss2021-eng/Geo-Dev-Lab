@@ -3,18 +3,23 @@
 
 ## 1. Overview
 
-This document summarises the Week 3 GIS data-processing activities, including coordinate reference system transformation, land-area calculation, comparison of area values, GeoPackage export, and an initial assessment of data quality.
+This data note summarises the Week 3 GIS data-processing activities, including coordinate reference system transformation, land-area calculation, comparison of area values, GeoPackage export, and an initial assessment of data quality.
+
+## 2. Clipping of Dataset
+The dataset contains administrative boundaries of Nigeria, Local Government Areas (LGAs) in Nigeria, and health facility locations across the country. Lagos State was selected as the study area. The national administrative boundary dataset was filtered to extract the boundary of Lagos State, which was saved as a separate shapefile.
+
+The health facilities dataset and the shapefile containing the Local Government Area boundaries of Lagos State were subsequently clipped to the study area. The resulting dataset contains the administrative boundaries of the 20 Local Government Areas (LGAs) of Lagos State, Nigeria, alongside health facility data within the state
 
 The dataset contains administrative boundaries for the 20 Local Government Areas (LGAs) of Lagos State, Nigeria.
 
-## 2. Coordinate Reference System Transformation
+## 3. Coordinate Reference System Transformation
 
 The administrative boundary data were initially provided in the geographic coordinate reference system **WGS 84**. The data were reprojected into **WGS 84 / UTM Zone 31N**, a projected coordinate reference system suitable for measuring distances and areas in metres within the relevant geographic region.
 
 Reprojection was carried out to ensure that area calculations were performed using projected coordinates rather than geographic longitude and latitude values.
 
 
-## 3. Total Area Calculation
+## 4. Total Area Calculation
 
 After reprojection, the total area of the study region was calculated from the administrative boundary geometries.
 
@@ -28,7 +33,7 @@ This is approximately:
 
 The total area was calculated and compared with the area values associated with the individual LGA records as part of the validation process.
 
-## 4. LGA Area Comparison
+## 5. LGA Area Comparison
 
 The following table presents the LGA names gotten from the polygon and the area compiled from external sources.  The discrepancy as seen is small
 
@@ -55,7 +60,7 @@ The following table presents the LGA names gotten from the polygon and the area 
 | Shomolu | 11.18279279 | 11,182,804 |
 | Surulere | 19.54428105 | 19,544,286 |
 
-## 5. GeoPackage Export
+## 6. GeoPackage Export
 
 The processed files were exported as GeoPackages (`.gpkg`). The layers were combined into a single layer during export.
 
@@ -63,9 +68,9 @@ GeoPackage is an OGC-supported format for storing geospatial data in a SQLite-ba
 
 Although the exported file contains one combined layer, the administrative attributes remain available as separate fields.
 
-## 6. Missing-Value Assessment
+## 7.Missing-Value Assessment
 
-The following fields were inspected for missing values:
+The fields of the Lagos LGA dataset was inspected for missing values. The following fields had no null values:
 
 - `adm2_name1`
 - `adm2_name2`
@@ -83,11 +88,12 @@ The following fields were inspected for missing values:
 
 Each of these fields contained **20 non-null records**, indicating that no null values were detected in these columns for the 20 LGA features examined.
 
-This result should be interpreted as a finding about the inspected fields only. It does not, by itself, establish that all fields in the GeoPackage are complete.
+However, some fields had null values throughout but they were not relevant to the purpose of this study. The fields were
 
-## 7. Data Quality Assessment
 
-### 7.1 Completeness
+## 8. Data Quality Assessment
+
+### 8.1 Completeness
 
 Completeness refers to the extent to which the required records, attributes, and geometries are present in the dataset.
 
@@ -95,26 +101,26 @@ The dataset contains 20 LGA records, corresponding to the 20 LGAs represented in
 
 Therefore, the inspected fields showed no missing values. However, some fields showed null values but there were not relevant to the subject at hand.
 
-### 7.2 Currency
+### 8.2 Currency
 
 Currency refers to how up to date the data are in relation to the date of the analysis and the intended application.
 
 The available information does not establish the date on which the administrative boundaries and associated attributes were last updated. The `valid_to` field was populated for all 20 records, but a non-null value does not necessarily confirm that the data are current.
 
 
-### 7.3 Positional Accuracy
+### 8.3 Positional Accuracy
 
 Positional accuracy describes how closely the recorded geographic positions of features correspond to their true or accepted reference positions.
 
 The data were reprojected from WGS 84 to WGS 84 / UTM Zone 31N to support area measurement. However, reprojection does not improve the original positional accuracy of the boundaries.
 
 
-### 7.4 Attribute Accuracy
+### 8.4 Attribute Accuracy
 
 Attribute accuracy refers to the correctness of the descriptive and numerical information associated with each spatial feature.
 
 
-### 7.5 Fitness for Purpose
+### 8.5 Fitness for Purpose
 
 Fitness for purpose refers to whether the dataset is sufficiently suitable for the intended analysis or decision-making task.
 
@@ -131,7 +137,7 @@ The processed LGA boundary dataset is potentially suitable for tasks such as:
 
 **Initial assessment:** The dataset is potentially fit for general LGA-level mapping and exploratory spatial analysis, subject to verification of its source, currency, geometry quality, and attribute definitions.
 
-## 8. Limitations
+## 9. Limitations
 
 The data had the following limitations:
 
@@ -146,7 +152,7 @@ The data had the following limitations:
 
 
 
-## 9. Conclusion
+## 10. Conclusion
 
 During Week 3, the LGA boundary dataset was transformed from WGS 84 into UTM Zone 31N to support area calculations. The calculated total area was approximately 3,622.11 km². The processed data were exported as a GeoPackage containing a single combined layer.
 
