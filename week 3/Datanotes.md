@@ -104,17 +104,16 @@ However, differences in data definitions, collection methods, and source metadat
 
 ### 7.5 Fitness for Purpose
 
-The processed datasets are suitable for:
+The processed datasets are suitable for the objectives of this study, which focus on assessing the distribution of healthcare facilities in relation to population density across Lagos State. They support:
 
-* Mapping the administrative structure of Lagos State
-* Aggregating health facilities by LGA
-* Joining LGA-level population statistics
-* Examining health-facility distribution in relation to population
-* Performing exploratory spatial analysis
-* Calculating approximate LGA areas
-* Producing thematic maps and spatial visualisations
+Mapping the spatial distribution of healthcare facilities across Lagos State
+Calculating population density for each LGA
+Determining healthcare facility availability relative to LGA population
+Comparing population density with healthcare facility distribution
+Identifying LGAs with relatively high population density but comparatively fewer healthcare facilities
+Producing maps and statistical summaries to support the spatial assessment
 
-Overall, the datasets are considered suitable for **LGA-level mapping and exploratory spatial analysis** within the scope of this project. However, differences in data sources, definitions, and reference periods should be considered when interpreting the results.
+Overall, the datasets are considered fit for the intended LGA-level spatial analysis.
 
 ## 8. Limitations
 
