@@ -133,7 +133,17 @@ The processed LGA boundary dataset is potentially suitable for tasks such as:
 
 ## 8. Limitations
 
-The following limitations should be considered:
+The data had the following limitations:
+
+1. **Different data sources:** The administrative boundary, health facility, and demographic datasets were obtained from different sources. Consequently, differences exist in their definitions, data collection methods, and update cycles.
+
+2. **Temporal differences:** The datasets represent different reference periods. The population dataset contains **2024 population estimates**, while the health facility dataset contains records from **2023**. Therefore, the population and health facility data do not represent exactly the same point in time.
+
+3. **Population estimates:** The population values represent **2024 estimates** rather than census counts. Therefore, they provide estimated population levels for each LGA and should not be interpreted as exact population counts.
+
+
+
+
 
 
 ## 9. Conclusion
