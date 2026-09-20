@@ -13,7 +13,6 @@ The administrative boundary data were initially provided in the geographic coord
 
 Reprojection was carried out to ensure that area calculations were performed using projected coordinates rather than geographic longitude and latitude values.
 
-> **Important:** Reprojecting a dataset changes the coordinate representation of the geometries. It does not change the physical location of the features.
 
 ## 3. Total Area Calculation
 
@@ -31,7 +30,7 @@ The total area was calculated and compared with the area values associated with 
 
 ## 4. LGA Area Comparison
 
-The following table presents the LGA names and their corresponding area values.
+The following table presents the LGA names gotten from the polygon and the area compiled from external sources.  The discrepancy as seen is small
 
 | LGA | Area (km²) | Area (m²) |
 |---|---:|---:|
@@ -94,16 +93,7 @@ Completeness refers to the extent to which the required records, attributes, and
 
 The dataset contains 20 LGA records, corresponding to the 20 LGAs represented in the study area. The inspected administrative-name, language, and validity-date fields contained 20 non-null records each.
 
-Therefore, the inspected fields showed no missing values. However, completeness should also be assessed for:
-
-- Geometry availability;
-- Duplicate records;
-- Missing LGA names;
-- Missing area values;
-- Missing population or other thematic attributes;
-- Unrepresented or unintentionally omitted LGAs.
-
-**Initial assessment:** The inspected attribute fields appear complete, but overall dataset completeness requires verification of all fields and the expected feature inventory.
+Therefore, the inspected fields showed no missing values. However, some fields showed null values but there were not relevant to the subject at hand.
 
 ### 7.2 Currency
 
@@ -111,15 +101,6 @@ Currency refers to how up to date the data are in relation to the date of the an
 
 The available information does not establish the date on which the administrative boundaries and associated attributes were last updated. The `valid_to` field was populated for all 20 records, but a non-null value does not necessarily confirm that the data are current.
 
-To assess currency properly, the following information should be established:
-
-- The original publication date;
-- The latest update date;
-- The date of the boundary delineation;
-- Whether any LGA boundary changes have occurred;
-- Whether the dataset reflects the administrative configuration required for the project.
-
-**Initial assessment:** Currency cannot be conclusively established from the available checks. The source metadata and update history should be consulted before using the data for current planning or policy analysis.
 
 ### 7.3 Positional Accuracy
 
@@ -127,33 +108,11 @@ Positional accuracy describes how closely the recorded geographic positions of f
 
 The data were reprojected from WGS 84 to WGS 84 / UTM Zone 31N to support area measurement. However, reprojection does not improve the original positional accuracy of the boundaries.
 
-Positional accuracy should be evaluated by comparing the LGA boundaries with an authoritative reference dataset, such as an official administrative boundary dataset or a surveyed control source.
-
-Potential checks include:
-
-- Comparing boundary locations against an authoritative reference;
-- Inspecting boundary alignment at an appropriate map scale;
-- Checking for visible offsets or distortions;
-- Confirming that the source coordinate reference system was correctly identified before reprojection.
-
-**Initial assessment:** The coordinate transformation supports metric analysis, but positional accuracy has not been independently validated. The original positional accuracy is therefore considered unverified.
 
 ### 7.4 Attribute Accuracy
 
 Attribute accuracy refers to the correctness of the descriptive and numerical information associated with each spatial feature.
 
-The inspection showed that the listed administrative and language fields contained no null values across the 20 records. This indicates that the fields were populated, but population completeness does not guarantee attribute correctness.
-
-Attribute accuracy should be checked by:
-
-- Comparing LGA names with authoritative administrative records;
-- Checking spelling, naming conventions, and alternative names;
-- Verifying administrative hierarchy fields;
-- Reviewing the meaning and values of `valid_to`;
-- Confirming that language fields use consistent codes or naming conventions;
-- Checking whether area values were calculated using the intended geometries and units.
-
-**Initial assessment:** The inspected attributes were populated, but their semantic and factual accuracy requires comparison with authoritative source documentation.
 
 ### 7.5 Fitness for Purpose
 
@@ -168,9 +127,7 @@ The processed LGA boundary dataset is potentially suitable for tasks such as:
 - Calculating approximate LGA areas;
 - Creating thematic maps and spatial visualisations.
 
-However, suitability depends on the intended spatial scale, accuracy requirements, data currency, and the reliability of the associated attributes.
 
-For high-stakes applications, such as legal boundary determination, cadastral surveying, or detailed engineering design, additional authoritative and higher-accuracy datasets would be required.
 
 **Initial assessment:** The dataset is potentially fit for general LGA-level mapping and exploratory spatial analysis, subject to verification of its source, currency, geometry quality, and attribute definitions.
 
@@ -178,13 +135,6 @@ For high-stakes applications, such as legal boundary determination, cadastral su
 
 The following limitations should be considered:
 
-1. The data quality assessment was based primarily on field inspection and null-value checks.
-2. No independent reference dataset was used to validate positional accuracy.
-3. The date of the latest dataset update was not established.
-4. Populated fields were not automatically treated as factually correct.
-5. The area comparison requires confirmation that the compared values use the same units, boundary definitions, and measurement methodology.
-6. Combining layers into a single layer may simplify file management, but the original layer structure and thematic distinctions should be documented if they are relevant to later analysis.
-7. The total area calculation should be interpreted in relation to the exact geometries included in the calculation and whether overlaps or gaps are present.
 
 ## 9. Conclusion
 
