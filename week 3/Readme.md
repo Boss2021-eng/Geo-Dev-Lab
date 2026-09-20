@@ -186,46 +186,7 @@ The following limitations should be considered:
 6. Combining layers into a single layer may simplify file management, but the original layer structure and thematic distinctions should be documented if they are relevant to later analysis.
 7. The total area calculation should be interpreted in relation to the exact geometries included in the calculation and whether overlaps or gaps are present.
 
-## 9. Recommended Validation Checks
-
-The following checks are recommended before using the data in a final GIS analysis:
-
-```python
-import geopandas as gpd
-
-# Read the GeoPackage
-lga = gpd.read_file("your_file.gpkg")
-
-# Inspect the dataset
-print(lga.info())
-
-# Check for missing values
-print(lga.isnull().sum())
-
-# Check geometry availability
-print(lga.geometry.isna().sum())
-
-# Check for empty geometries
-print(lga.geometry.is_empty.sum())
-
-# Check for invalid geometries
-print((~lga.geometry.is_valid).sum())
-
-# Check for duplicate records
-print(lga.duplicated().sum())
-
-# Check the coordinate reference system
-print(lga.crs)
-
-# Calculate area after reprojection
-lga_projected = lga.to_crs("EPSG:32631")
-lga_projected["area_m2"] = lga_projected.geometry.area
-
-# Calculate the total area
-print(lga_projected["area_m2"].sum())
-```
-
-## 10. Conclusion
+## 9. Conclusion
 
 During Week 3, the LGA boundary dataset was transformed from WGS 84 into UTM Zone 31N to support area calculations. The calculated total area was approximately 3,622.11 km². The processed data were exported as a GeoPackage containing a single combined layer.
 
