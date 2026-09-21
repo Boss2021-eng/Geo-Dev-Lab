@@ -120,7 +120,7 @@ Overall, the datasets are considered fit for the intended LGA-level spatial anal
 
 The analysis had the following limitations:
 
-1. **Different data sources:** The administrative boundary, health-facility, and demographic datasets were obtained from different sources. Differences in definitions, data-collection methods, classification systems, and update cycles may affect their direct comparison.
+1. **Different data sources:** The administrative boundary, health facility, and demographic datasets were obtained from different sources. Differences in data definitions, collection methods, classification systems, and update cycles resulted in small discrepancies in the reported data.
 
 2. **Temporal differences:** The population dataset contains 2024 population estimates, whereas the health-facility dataset contains 2023 records. Therefore, the datasets do not represent exactly the same point in time.
 
@@ -130,8 +130,8 @@ The analysis had the following limitations:
 
 ## 9. Conclusion
 
-During Week 3, the LGA boundary dataset was reprojected from **WGS 84 to WGS 84 / UTM Zone 31N** to support area calculations. The total calculated area of the 20 LGAs was approximately **3,622.11 km²**. The processed spatial data were exported as a GeoPackage containing a single combined layer.
+During Week 3, the LGA boundary dataset was reprojected from **WGS 84 to WGS 84 / UTM Zone 31N** to support area calculations. The total administrative area of the 20 LGAs was approximately **3,622.11 km²**. The processed spatial data were exported as a GeoPackage containing a single combined layer.
 
 The administrative-name, language, and validity-date fields contained no null values across the 20 LGA records, although some non-relevant fields contained missing values. The health-facility dataset was inspected and corrected where necessary. The corrected health-facility locations were then compared visually against a base map and showed little spatial deviation, indicating general positional consistency.
 
-Overall, the processed datasets are suitable for LGA-level mapping, health-facility aggregation, population comparison, and exploratory spatial analysis.
+Overall, the processed datasets were assessed against five data quality criteria: completeness, currency, positional accuracy, attribute accuracy, and fitness for purpose. The datasets satisfied these quality checks, with only minor discrepancies identified during the assessment.
