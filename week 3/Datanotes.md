@@ -62,11 +62,12 @@ The following table presents the LGA names gotten from the polygon and the area 
 
 ## 6. GeoPackage Export
 
-The processed files were exported as GeoPackages (`.gpkg`). The layers were combined into a single layer during export.
+### Exporting and Consolidating Spatial Data
 
-GeoPackage is an OGC-supported format for storing geospatial data in a SQLite-based container. It can store geometry, attributes, and spatial reference information in a single file.
+The processed datasets were exported as GeoPackage (`.gpkg`) files and consolidated into a single GeoPackage named `Lagos_health_and_LGA.gpkg` to reduce data redundancy and simplify data management. During export, the relevant datasets were combined into a single layer.
 
-Although the exported file contains one combined layer, the administrative attributes remain available as separate fields.
+GeoPackage is an Open Geospatial Consortium (OGC)-supported, SQLite-based geospatial data format that enables the storage of spatial geometries, attribute data, and coordinate reference system information within a single file. This format facilitates efficient data organisation, portability, and interoperability across GIS software.
+
 
 ## 7. Data Quality Assessment
 
