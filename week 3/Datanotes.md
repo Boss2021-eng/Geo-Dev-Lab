@@ -1,5 +1,5 @@
 
-# Week 3 GIS Data Processing and Data Quality Assessment
+# Week 3: Coordinate Transformation, GIS Data Processing, and Data Quality Assessment
 
 ## 1. Overview
 
