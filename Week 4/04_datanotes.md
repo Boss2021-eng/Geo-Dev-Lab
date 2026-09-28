@@ -5,9 +5,9 @@
 
 How well are healthcare facilities distributed in relation to population across Lagos State, Nigeria?
 
-## Spatial Operation
+## Spatial Join Operation
 
-The **Summarize by Location** spatial operation was used to determine the number of healthcare facilities within each of the 20 Local Government Areas (LGAs) of Lagos State. The operation summarized the healthcare facility point features by LGA and produced a facility count field based on the feature ID (`fid`), which was subsequently renamed **Health_facilities_count**.
+The **Summarize by Location**, a kind of spatial join operation, was used to determine the number of healthcare facilities within each of the 20 Local Government Areas (LGAs) of Lagos State. The operation summarized the healthcare facility point features by LGA and produced a facility count field based on the feature ID (`fid`), which was subsequently renamed **Health_facilities_count**.
 
 A verification check was also carried out because some healthcare facility points were not initially captured by the spatial summary. The analysis identified 2,315 facilities automatically, while five facilities were excluded because of minor spatial shifts in their locations. These consisted of two facilities each in Eti-Osa and Ikorodu and one facility in 
 Badagry. The five facilities were manually added to the corresponding LGA counts, giving a final total of **2,320 healthcare facilities**.
