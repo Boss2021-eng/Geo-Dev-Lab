@@ -18,8 +18,7 @@ The **population-to-facility ratio** was then calculated by dividing the estimat
 
 This ratio was used to examine the relationship between population demand and healthcare facility availability. The resulting values were classified using the **Equal Interval** classification method into four access categories: **High Access, Moderately High Access, Moderately Low Access, and Low Access**. A graduated symbology ** (Equal Interval) ** was then applied to visualize the spatial variation in healthcare access across Lagos State as shown in the map below
 
-<img width="3507" height="2480" alt="Health_distribution" src="https://github.com/user-attachments/assets/a7639348-ab53-4b14-9728-24bc8a381078" />
-
+<img width="3507" height="2480" alt="layout_final" src="https://github.com/user-attachments/assets/c3ba4938-1547-4a87-86ec-2a6e0d442ff7" />
 
 The files were exported as a geopackage file `Lagos_lga_and_health.gpkg`
 
