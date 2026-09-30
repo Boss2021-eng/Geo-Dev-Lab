@@ -33,12 +33,12 @@ The 2023 dataset provides population estimates at approximately 100 m spatial re
 Administrative boundary polygons for Lagos State and its Local Government Areas (LGAs) will be used to define the study area and support the aggregation and spatial analysis of healthcare facility and population data at the LGA level.
 
 **Source:** United Nations Second Administrative Level Boundaries (SALB), Nigeria
-**Source Link:** [UN SALB Nigeria Dataset](https://salb.un.org/en/data/nga?utm_source=chatgpt.com)
+**Source Link:** [UN SALB Nigeria Dataset](https://salb.un.org/en/data/nga?)
 
 
 ## Methodology
 
-The healthcare facility locations will first be mapped within Lagos State. Population data will then be processed to calculate population density across the study area.
+The healthcare facility locations will first be mapped within Lagos State. Population data will then be processed to calculate population across the study area.
 
 Spatial analysis will be used to:
 
@@ -48,7 +48,7 @@ Spatial analysis will be used to:
 4. Compare areas with high population density against areas with high or low healthcare facility availability.
 5. Identify LGAs where healthcare facilities may be insufficient relative to the population they serve.
 
-The final analysis will use maps and statistical summaries to determine whether healthcare facilities are **evenly distributed in relation to population density** across Lagos State.
+The final analysis will use maps and statistical summaries to determine whether healthcare facilities are **evenly distributed in relation to population** across Lagos State.
 
 ## Expected Output
 
