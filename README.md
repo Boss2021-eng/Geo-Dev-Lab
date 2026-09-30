@@ -15,15 +15,23 @@ A hands-on laboratory for building practical skills in **GIS, geospatial data, P
 
 **Week 1:** Choosing a question the data can answer
 Exploring real-world problems, developing spatial questions, and identifying the data needed to answer them.
+</br>
+**Project:** [View Week 1](./Week%201/) 
 
 **Week 2:** Understanding spatial data and getting yours
 Learning what spatial data is, understanding vector and raster data, finding reliable datasets, and acquiring the data needed for analysis.
+</br>
+**Project:** [View Week 2](./Week%202/) 
 
 **Week 3:** Coordinate systems and preparing your data
 Understanding coordinate reference systems, projections, datums, EPSG codes, and preparing spatial data for analysis.
+</br>
+**Project:** [View Week 3](./week%203/) 
 
 **Week 4:** Spatial relationships and analysis
 Exploring spatial relationships, spatial joins, proximity, buffers, overlays, intersections, and other fundamental spatial analysis techniques.
+</br>
+**Project:** [View Week 4](./Week%204/) 
 
 ## Phase Two: Software Development, AI and Agentic Systems
 
