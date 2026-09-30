@@ -2,7 +2,7 @@
 
 ## Spatial Question
 
-**How well are healthcare facilities distributed in relation to population density across Lagos State, Nigeria?**
+**How well are healthcare facilities distributed in relation to population across Lagos State, Nigeria?**
 
 ## Study Area
 
