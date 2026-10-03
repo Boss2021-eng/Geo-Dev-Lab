@@ -4,7 +4,7 @@ A hands-on laboratory for building practical skills in **GIS, geospatial data, P
 
 ## Phase One: GIS, Geospatial Programming and Web GIS
 
-* **Month 1:** GIS foundations and the geospatial data ecosystem · **Weeks 1–4**
+* **[Month 1](Month_01_summary.md) :** GIS foundations and the geospatial data ecosystem · **Weeks 1–4**
 * **Month 2:** Development environment and Python foundations · **Weeks 5–9**
 * **Month 3:** Geospatial Python and automation · **Weeks 10–14**
 * **Month 4:** Web foundations and Web GIS · **Weeks 15–19**
