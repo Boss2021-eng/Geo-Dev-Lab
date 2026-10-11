@@ -4,7 +4,7 @@
 
 [View Week 5 Project Files](./Week%205/)
 
-Set up Python and VS Code, used the `pwd` command to check the working directory, and created and ran a `hello.py` script to verify the setup. Completed the independent challenge by creating a `practice` folder, copying `hello.py` into it, moving the screenshot into the folder, and renaming it to `week_5.png`.
+Set up Python and VS Code, checked and displayed the installed Python version, and used the `pwd` command to display the current working directory. Created and ran a `hello.py` script to verify the setup. Completed the independent challenge by creating a `practice` folder, copying `hello.py` into it, moving the screenshot into the folder, and renaming the screenshot to `week_5.png`.
 
 
 ## Week 6 Summary: Environments and Project Setup with UV
