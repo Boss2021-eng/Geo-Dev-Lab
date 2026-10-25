@@ -1,10 +1,6 @@
 import csv
 
-with open("Lagos_LGAs_info.csv", encoding='utf-8-sig') as f:
 
-    reader = csv.DictReader(f)
-    rows = list(reader)  
-    
 def inspect_columns(filename, column):
     with open(filename, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
@@ -20,7 +16,7 @@ def inspect_columns(filename, column):
 
     return{
         "smallest": min(values),
-        "largest": min(values),
+        "largest": max(values),
         "count": len(values)
     }
 
