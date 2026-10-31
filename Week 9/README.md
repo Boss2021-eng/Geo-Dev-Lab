@@ -1,4 +1,4 @@
-# Week 8: Code Refactoring – Reading, Cleaning and Summarising CSV Data
+# Week 9: Code Refactoring and Consolidation
 
 ## 1. Introduction
 
