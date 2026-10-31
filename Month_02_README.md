@@ -13,7 +13,7 @@ Set up Python and VS Code, checked and displayed the installed Python version, a
 
 Set up a Python project using UV to manage dependencies and virtual environments. Practised key commands, including uv init, uv add, uv run, and uv remove. Installed Pandas, created a check.py script to verify its version, and learned how to run other people's code by installing the required dependencies.
 
-## Week 7 Python, the six ideas
+## Week 7: Python, the six ideas
 [View Week 7 Project Files](./Week%207/)
 
 
