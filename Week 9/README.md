@@ -6,7 +6,7 @@ This week's task focused on **code refactoring**.
 
 Refactoring is the process of improving the internal structure, readability, efficiency and maintainability of existing code without changing its original functionality or the expected results.
 
-The objective of this exercise was to refactor a Python script responsible for reading data from a CSV file, extracting and cleaning values from selected columns, and generating summary statistics.
+The objective of this exercise was to refactor a Python script (inspect_data.py from week 8) responsible for reading data from a CSV file, extracting and cleaning values from selected columns, and generating summary statistics.
 
 Rather than writing one long block of code to perform all these operations, the task involved breaking the process into smaller, reusable functions. Each function performs a specific responsibility, making the code easier to understand, test, debug and maintain.
 
@@ -48,7 +48,7 @@ def read_rows(filename):
 # It takes filename and column as output
 def clean_values(rows, column):
 
-    # Initialize an empty list named value
+    # Initialize an empty list named values
     values = []
     # Iterate through the read rows
     for row in rows:
@@ -87,13 +87,15 @@ def summarise_all(filename, columns):
     return report
 # call the function
 report = summarise_all("Lagos_LGAs_info.csv", ["Area(Km 2)", "Median Age"])
-
+# iterate through the items and print the column and its descriptive statistics
 for column, stats in report.items():
     print(column, "->", stats)
 ```
 # Result
-The code was run and the result gotten was
-<img width="767" height="82" alt="Week 9" src="https://github.com/user-attachments/assets/8d803887-4085-4da0-a2ff-84026fbf56e1" />
+The code was run and the result gotten compared with the week 8 as shown in the screenshot below
+<img width="783" height="141" alt="Week 9" src="https://github.com/user-attachments/assets/bdd8d436-c7ff-421f-a83f-9954735d0f6c" />
+It can be seen from the image below that the results gotten were the same proving that despite the codes being refactored, the same results were gotten
+
 
 
 
