@@ -63,7 +63,7 @@ def clean_values(rows, column):
 
 # 3. Summarize these values
 def summarise(values):
-    # Address an edge case
+    # Address an edge case of the list being empty
     if len(values) == 0:
         return {"count": 0, "smallest": None, "largest": None, "average":None}
     # Return the count, smallest, largest and avergae
