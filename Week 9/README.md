@@ -93,7 +93,7 @@ for column, stats in report.items():
 ```
 # Result
 The code was run and the result gotten compared with the week 8 as shown in the screenshot below
-<img width="783" height="141" alt="Week 9" src="https://github.com/user-attachments/assets/bdd8d436-c7ff-421f-a83f-9954735d0f6c" />
+<img width="783" height="141" alt="Week 9" src="https://github.com/user-attachments/assets/bdd8d436-c7ff-421f-a83f-9954735d0f6c" /> <br />
 It can be seen from the image below that the results gotten were the same proving that despite the codes being refactored, the same results were gotten
 
 
