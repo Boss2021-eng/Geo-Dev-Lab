@@ -6,7 +6,7 @@ This week's task focused on **code refactoring**.
 
 Refactoring is the process of improving the internal structure, readability, efficiency and maintainability of existing code without changing its original functionality or the expected results.
 
-The objective of this exercise was to refactor a Python script (**inspect_data.py from week 8**) responsible for reading data from a CSV file, extracting and cleaning values from selected columns, and generating summary statistics.
+The objective of this exercise was to refactor a Python script (**`inspect_data.py` from week 8**) responsible for reading data from a CSV file, extracting and cleaning values from selected columns, and generating summary statistics.
 
 Rather than writing one long block of code to perform all these operations, the task involved breaking the process into smaller, reusable functions. Each function performs a specific responsibility, making the code easier to understand, test, debug and maintain.
 
