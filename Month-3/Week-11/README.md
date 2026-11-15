@@ -82,7 +82,7 @@ The map provided a spatial overview of the distribution of health facilities acr
 
 One of the challenges encountered was inconsistent naming conventions between datasets when attempting to join records using a common field.
 
-To resolve this, I applied name cleaning to standardise the values before performing the join. This improved consistency between the datasets and enabled the spatial analysis to proceed.
+To resolve this, I applied a name cleaning function to standardise, and clean the values before performing the join. This improved consistency between the datasets and enabled the spatial analysis to proceed.
 
 ## Limitations
 
