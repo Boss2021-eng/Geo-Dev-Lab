@@ -6,7 +6,7 @@ This week focused on six major spatial operations in GeoPandas: **buffer, spatia
 
 The exercises applied these operations to Lagos administrative boundaries and health facility datasets to explore spatial relationships, measure geographic areas, identify facility accessibility and validate geographic data.
 
-## 1. Coordinate Reference System and Area Calculation (`my_crs.py`)
+## 1. Coordinate Reference System and Area Calculation [(`my_crs.py`)](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-11/Independent_challenge/my_counts.py)
 
 The Lagos administrative boundaries were projected to **EPSG:32631 (WGS 84 / UTM Zone 31N)** to enable accurate distance and area calculations in metres.
 
@@ -16,7 +16,7 @@ The calculated total area of Lagos was:
 
 Using a projected coordinate reference system ensured that area calculations were performed using appropriate linear units rather than geographic coordinates (latitude and longitude).
 
-## 2. Spatial Join and Facility Count (`my_counts.py`)
+## 2. Spatial Join and Facility Count [(`my_counts.py`)](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-11/Independent_challenge/my_counts.py)
 
 A spatial join was performed between the health facilities and Lagos Local Government Area (LGA) boundaries to determine the number of health facilities within each LGA.
 
@@ -29,7 +29,7 @@ The `gpd.sjoin()` function was used to associate each health facility with its c
 
 The result was consistent with the facility count obtained during Month 1, providing a useful validation of the earlier analysis.
 
-## 3. Nearest Health Facility Analysis (`my_reach.py`)
+## 3. Nearest Health Facility Analysis [(`my_reach.py`)](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-11/Independent_challenge/my_reach.py)
 
 The nearest spatial join (`gpd.sjoin_nearest()`) was used to identify the nearest health facility to each LGA and calculate the corresponding distance.
 
@@ -64,7 +64,7 @@ The results showed variations in the distance to the nearest health facility acr
 
 This analysis provides an initial indication of the spatial proximity of health facilities to administrative areas. However, proximity alone does not establish healthcare accessibility, as factors such as road networks, travel time, facility capacity and service availability were not considered.
 
-## 4. Geometry Validation (`my_validity.py`)
+## 4. Geometry Validation [(`my_validity.py`)](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-11/Independent_challenge/my_validity.py)
 
 The `my_validity.py` script was used to check the geometric validity of the Lagos LGA boundaries.
 
@@ -72,7 +72,7 @@ The `my_validity.py` script was used to check the geometric validity of the Lago
 
 This confirmed that the boundary dataset was suitable for subsequent spatial operations without requiring geometry repair.
 
-## 5. Map Visualisation (`my_make_map.py`)
+## 5. Map Visualisation [(`my_make_map.py`)](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-11/Independent_challenge/my_make_map.py)
 
 The `my_make_map.py` script was used to visualise the Lagos LGA boundaries alongside the health facility locations.
 
