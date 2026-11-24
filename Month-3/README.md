@@ -19,4 +19,4 @@
 - Performed zonal statistical analysis on the Lagos DEM to derive elevation statistics and calculate mean elevation values across health facility locations.
 
 
-Performed zonal statistical analysis on the Lagos DEM to derive elevation statistics and calculate mean elevation across health facility locations.
+- Performed zonal statistical analysis on the Lagos DEM to derive elevation statistics and calculate mean elevation across health facility locations.
