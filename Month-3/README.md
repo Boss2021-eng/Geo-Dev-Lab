@@ -8,11 +8,15 @@
 - Created a map showing Lagos LGA boundaries and the first 20 healthcare facilities to avoid overcrowding ([lagos_facilities_map.png](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-10/Independent_challenge/files/lagos_facilities_map.png)) using ([my_make_map.py](https://github.com/Boss2021-eng/Geo-Dev-Lab/blob/main/Month-3/Week-10/Independent_challenge/my_make_map.py))
 
 ## Week 12:
-Loaded and inspected SRTM 1 Arc-Second Global Digital Elevation Model (DEM) data for Lagos using my_inspect.py.
+- Loaded and inspected Landsat 8 Collection 2 Level-2 (L2SP) imagery for Lagos using my_inspect.py. Worked with scene LC08_L2SP_191055_20261104_20261116_02_T1, acquired on 4 November 2026, covering WRS-2 Path 191 and Row 055.
 
-Generated a Normalized Difference Water Index (NDWI) map from Landsat 8 imagery using Bands 3 (Green) and 5 (NIR), with my_index.py and myplot.py for index calculation and visualization.
+- Examined Landsat scene metadata, including acquisition date, processing level, spatial resolution, spectral bands and surface reflectance properties using my_inspect.py.
 
-Performed zonal statistical analysis on the Lagos DEM to derive elevation statistics and calculate mean elevation values across health facility locations.
+- Generated a Normalized Difference Water Index (NDWI) map using Landsat 8 Bands 3 (Green) and 5 (Near Infrared), applying surface reflectance scaling factors and using my_index.py and myplot.py for index calculation and visualization.
+
+- Loaded and inspected SRTM 1 Arc-Second Global Digital Elevation Model (DEM) data for Lagos to examine elevation characteristics.
+
+- Performed zonal statistical analysis on the Lagos DEM to derive elevation statistics and calculate mean elevation values across health facility locations.
 
 
 Performed zonal statistical analysis on the Lagos DEM to derive elevation statistics and calculate mean elevation across health facility locations.
